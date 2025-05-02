@@ -2905,3 +2905,197 @@ Action:
 Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
 
 2025-05-02 17:01:03 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a641f6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@66487713, org.springframework.security.web.context.SecurityContextHolderFilter@4c90fc3b, org.springframework.security.web.header.HeaderWriterFilter@4fa3bebe, org.springframework.web.filter.CorsFilter@18ed8b75, org.springframework.security.web.csrf.CsrfFilter@2cc82c83, org.springframework.security.web.authentication.logout.LogoutFilter@34128fed, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@386d41cb, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7d5176d6, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@22ea09b7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@77e24d3c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5dfb078, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@27f8f1cc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@13f255ed, org.springframework.security.web.access.ExceptionTranslationFilter@4fe4b8b6, org.springframework.security.web.access.intercept.AuthorizationFilter@480f1311]
+2025-05-02 17:02:12 DEBUG o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-05-02 17:02:12 DEBUG o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-05-02 17:02:12 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:02:21 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/filter?name=a
+2025-05-02 17:02:21 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:02:21 DEBUG o.s.s.w.s.HttpSessionRequestCache - Saved request http://localhost:8080/api/filter?name=a&continue to session
+2025-05-02 17:02:21 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2025-05-02 17:02:21 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2025-05-02 17:02:21 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@27d4513e
+2025-05-02 17:02:21 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2025-05-02 17:02:21 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@4925c191
+2025-05-02 17:02:21 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error?name=a
+2025-05-02 17:02:21 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:02:21 DEBUG o.s.s.w.s.HttpSessionRequestCache - Saved request http://localhost:8080/error?name=a&continue to session
+2025-05-02 17:02:21 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2025-05-02 17:02:21 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2025-05-02 17:02:21 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@27d4513e
+2025-05-02 17:02:21 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2025-05-02 17:02:21 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@4925c191
+2025-05-02 17:02:29 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/filter?name=a
+2025-05-02 17:02:29 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:02:29 DEBUG o.s.s.w.s.HttpSessionRequestCache - Saved request http://localhost:8080/api/filter?name=a&continue to session
+2025-05-02 17:02:29 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2025-05-02 17:02:29 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2025-05-02 17:02:29 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@27d4513e
+2025-05-02 17:02:29 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2025-05-02 17:02:29 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@4925c191
+2025-05-02 17:02:29 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error?name=a
+2025-05-02 17:02:29 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:02:29 DEBUG o.s.s.w.s.HttpSessionRequestCache - Saved request http://localhost:8080/error?name=a&continue to session
+2025-05-02 17:02:29 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2025-05-02 17:02:29 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2025-05-02 17:02:29 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@27d4513e
+2025-05-02 17:02:29 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2025-05-02 17:02:29 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@4925c191
+2025-05-02 17:02:33 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/filter?name=a
+2025-05-02 17:02:33 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:02:33 DEBUG o.s.s.w.s.HttpSessionRequestCache - Saved request http://localhost:8080/api/filter?name=a&continue to session
+2025-05-02 17:02:33 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2025-05-02 17:02:33 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2025-05-02 17:02:33 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@27d4513e
+2025-05-02 17:02:33 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2025-05-02 17:02:33 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@4925c191
+2025-05-02 17:02:33 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error?name=a
+2025-05-02 17:02:33 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:02:33 DEBUG o.s.s.w.s.HttpSessionRequestCache - Saved request http://localhost:8080/error?name=a&continue to session
+2025-05-02 17:02:33 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2025-05-02 17:02:33 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2025-05-02 17:02:33 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@27d4513e
+2025-05-02 17:02:33 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2025-05-02 17:02:33 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@4925c191
+2025-05-02 17:02:46 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/students?page=0&size=5&sort=name,asc
+2025-05-02 17:02:46 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:02:46 DEBUG o.s.s.w.s.HttpSessionRequestCache - Saved request http://localhost:8080/api/students?page=0&size=5&sort=name,asc&continue to session
+2025-05-02 17:02:46 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2025-05-02 17:02:46 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2025-05-02 17:02:46 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@27d4513e
+2025-05-02 17:02:46 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2025-05-02 17:02:46 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@4925c191
+2025-05-02 17:02:46 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error?page=0&size=5&sort=name,asc
+2025-05-02 17:02:46 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:02:46 DEBUG o.s.s.w.s.HttpSessionRequestCache - Saved request http://localhost:8080/error?page=0&size=5&sort=name,asc&continue to session
+2025-05-02 17:02:46 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2025-05-02 17:02:46 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2025-05-02 17:02:46 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@27d4513e
+2025-05-02 17:02:46 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2025-05-02 17:02:46 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@4925c191
+2025-05-02 17:02:57 DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/send-email-with-attachment
+2025-05-02 17:02:57 DEBUG o.s.security.web.csrf.CsrfFilter - Invalid CSRF token found for http://localhost:8080/api/send-email-with-attachment
+2025-05-02 17:02:57 DEBUG o.s.s.w.a.AccessDeniedHandlerImpl - Responding with 403 status code
+2025-05-02 17:02:57 DEBUG o.s.security.web.FilterChainProxy - Securing POST /error
+2025-05-02 17:02:57 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:02:57 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2025-05-02 17:02:57 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using Or [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest], And [Not [MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[text/html], useEquals=false, ignoredMediaTypes=[]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[application/atom+xml, application/x-www-form-urlencoded, application/json, application/octet-stream, application/xml, multipart/form-data, text/xml], useEquals=false, ignoredMediaTypes=[*/*]]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@7d49fe37, matchingMediaTypes=[*/*], useEquals=true, ignoredMediaTypes=[]]]
+2025-05-02 17:02:57 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Match found! Executing org.springframework.security.web.authentication.DelegatingAuthenticationEntryPoint@27d4513e
+2025-05-02 17:02:57 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2025-05-02 17:02:57 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint - No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@4925c191
+2025-05-02 17:09:55 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@363e2009, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b55fc83, org.springframework.security.web.context.SecurityContextHolderFilter@7dc9b41a, org.springframework.security.web.header.HeaderWriterFilter@1ae90cb9, org.springframework.security.web.authentication.logout.LogoutFilter@106ac5f4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f09907, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@492d38a2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3615f8d9, org.springframework.security.web.access.ExceptionTranslationFilter@2be208db, org.springframework.security.web.access.intercept.AuthorizationFilter@76876421]
+2025-05-02 17:10:06 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/students?page=0&size=5&sort=name,asc
+2025-05-02 17:10:06 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/students?page=0&size=5&sort=name,asc
+2025-05-02 17:10:06 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:10:06 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error?page=0&size=5&sort=name,asc
+2025-05-02 17:10:06 DEBUG o.s.security.web.FilterChainProxy - Secured GET /error?page=0&size=5&sort=name,asc
+2025-05-02 17:10:06 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:10:18 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/filter?name=a
+2025-05-02 17:10:18 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/filter?name=a
+2025-05-02 17:10:18 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:10:18 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error?name=a
+2025-05-02 17:10:18 DEBUG o.s.security.web.FilterChainProxy - Secured GET /error?name=a
+2025-05-02 17:10:18 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:10:33 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/filter?name=A
+2025-05-02 17:10:33 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/filter?name=A
+2025-05-02 17:10:33 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:10:33 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error?name=A
+2025-05-02 17:10:33 DEBUG o.s.security.web.FilterChainProxy - Secured GET /error?name=A
+2025-05-02 17:10:33 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:11:44 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5abc488d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30d944d8, org.springframework.security.web.context.SecurityContextHolderFilter@29a5f924, org.springframework.security.web.header.HeaderWriterFilter@2ddb6c71, org.springframework.security.web.authentication.logout.LogoutFilter@67eabe02, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e1ce99c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b39bee2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1c76b2fe, org.springframework.security.web.access.ExceptionTranslationFilter@159a0f0e, org.springframework.security.web.access.intercept.AuthorizationFilter@30cb489a]
+2025-05-02 17:11:48 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/filter?name=A
+2025-05-02 17:11:48 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/filter?name=A
+2025-05-02 17:11:48 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:11:48 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error?name=A
+2025-05-02 17:11:48 DEBUG o.s.security.web.FilterChainProxy - Secured GET /error?name=A
+2025-05-02 17:11:48 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:12:37 DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/send-email-with-attachment
+2025-05-02 17:12:37 DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/send-email-with-attachment
+2025-05-02 17:12:37 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:12:37 DEBUG o.s.security.web.FilterChainProxy - Securing POST /error
+2025-05-02 17:12:37 DEBUG o.s.security.web.FilterChainProxy - Secured POST /error
+2025-05-02 17:12:37 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:31:38 DEBUG o.s.security.web.FilterChainProxy - Securing POST /email/send-email-with-attachment
+2025-05-02 17:31:38 DEBUG o.s.security.web.FilterChainProxy - Secured POST /email/send-email-with-attachment
+2025-05-02 17:31:40 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:40:16 DEBUG o.s.security.web.FilterChainProxy - Securing POST /email/send-email-with-attachment
+2025-05-02 17:40:16 DEBUG o.s.security.web.FilterChainProxy - Secured POST /email/send-email-with-attachment
+2025-05-02 17:40:16 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:42:46 DEBUG o.s.security.web.FilterChainProxy - Securing POST /email/send-email-with-attachment
+2025-05-02 17:42:46 DEBUG o.s.security.web.FilterChainProxy - Secured POST /email/send-email-with-attachment
+2025-05-02 17:42:46 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:43:00 DEBUG o.s.security.web.FilterChainProxy - Securing POST /email/send-email-with-attachment
+2025-05-02 17:43:00 DEBUG o.s.security.web.FilterChainProxy - Secured POST /email/send-email-with-attachment
+2025-05-02 17:43:00 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:43:53 DEBUG o.s.security.web.FilterChainProxy - Securing POST /email/send-email-with-attachment
+2025-05-02 17:43:53 DEBUG o.s.security.web.FilterChainProxy - Secured POST /email/send-email-with-attachment
+2025-05-02 17:43:53 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:46:02 DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/mail/test?to=ak0ru@bk.ru
+2025-05-02 17:46:02 DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/mail/test?to=ak0ru@bk.ru
+2025-05-02 17:46:02 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:46:02 DEBUG o.s.security.web.FilterChainProxy - Securing POST /error?to=ak0ru@bk.ru
+2025-05-02 17:46:02 DEBUG o.s.security.web.FilterChainProxy - Secured POST /error?to=ak0ru@bk.ru
+2025-05-02 17:46:02 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:46:09 DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/mail/test?to=ak0ru@bk.ru
+2025-05-02 17:46:09 DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/mail/test?to=ak0ru@bk.ru
+2025-05-02 17:46:09 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:46:09 DEBUG o.s.security.web.FilterChainProxy - Securing POST /error?to=ak0ru@bk.ru
+2025-05-02 17:46:09 DEBUG o.s.security.web.FilterChainProxy - Secured POST /error?to=ak0ru@bk.ru
+2025-05-02 17:46:09 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:51:23 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2b98c310, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@19834eb7, org.springframework.security.web.context.SecurityContextHolderFilter@39179470, org.springframework.security.web.header.HeaderWriterFilter@50eae15a, org.springframework.security.web.authentication.logout.LogoutFilter@57f6fc09, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2468c0e4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ff8d76f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@26361572, org.springframework.security.web.access.ExceptionTranslationFilter@1c618295, org.springframework.security.web.access.intercept.AuthorizationFilter@26619e5]
+2025-05-02 17:54:40 DEBUG o.s.security.web.FilterChainProxy - Securing POST /email/send-email-with-attachment
+2025-05-02 17:54:40 DEBUG o.s.security.web.FilterChainProxy - Secured POST /email/send-email-with-attachment
+2025-05-02 17:54:44 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:58:35 DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/mail/test?to=ak0ru@bk.ru
+2025-05-02 17:58:35 DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/mail/test?to=ak0ru@bk.ru
+2025-05-02 17:58:35 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:58:35 DEBUG o.s.security.web.FilterChainProxy - Securing POST /error?to=ak0ru@bk.ru
+2025-05-02 17:58:35 DEBUG o.s.security.web.FilterChainProxy - Secured POST /error?to=ak0ru@bk.ru
+2025-05-02 17:58:35 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:59:18 DEBUG o.s.security.web.FilterChainProxy - Securing POST /email/test?to=ak0ru@bk.ru
+2025-05-02 17:59:18 DEBUG o.s.security.web.FilterChainProxy - Secured POST /email/test?to=ak0ru@bk.ru
+2025-05-02 17:59:18 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 17:59:19 DEBUG o.s.security.web.FilterChainProxy - Securing POST /error?to=ak0ru@bk.ru
+2025-05-02 17:59:19 DEBUG o.s.security.web.FilterChainProxy - Secured POST /error?to=ak0ru@bk.ru
+2025-05-02 17:59:19 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 18:12:27 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/tasks?page=0&size=5&sort=title,asc
+2025-05-02 18:12:27 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/tasks?page=0&size=5&sort=title,asc
+2025-05-02 18:12:28 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 18:16:58 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/tasks/filter?title=Buy%20milk&completed=false&page=0&size=10
+2025-05-02 18:16:58 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/tasks/filter?title=Buy%20milk&completed=false&page=0&size=10
+2025-05-02 18:16:58 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 18:18:32 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/users
+2025-05-02 18:18:32 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/users
+2025-05-02 18:18:32 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 18:18:32 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-05-02 18:18:32 DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+2025-05-02 18:18:32 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 18:21:03 DEBUG o.s.security.web.FilterChainProxy - Securing POST /email/test?to=ak0ru@bk.ru
+2025-05-02 18:21:03 DEBUG o.s.security.web.FilterChainProxy - Secured POST /email/test?to=ak0ru@bk.ru
+2025-05-02 18:21:03 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 18:21:03 DEBUG o.s.security.web.FilterChainProxy - Securing POST /error?to=ak0ru@bk.ru
+2025-05-02 18:21:03 DEBUG o.s.security.web.FilterChainProxy - Secured POST /error?to=ak0ru@bk.ru
+2025-05-02 18:21:03 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 18:24:59 DEBUG o.s.security.web.FilterChainProxy - Securing POST /email/send-email-with-attachment
+2025-05-02 18:24:59 DEBUG o.s.security.web.FilterChainProxy - Secured POST /email/send-email-with-attachment
+2025-05-02 18:24:59 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 18:25:21 DEBUG o.s.security.web.FilterChainProxy - Securing POST /email/send-email-with-attachment
+2025-05-02 18:25:21 DEBUG o.s.security.web.FilterChainProxy - Secured POST /email/send-email-with-attachment
+2025-05-02 18:25:25 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 18:26:53 DEBUG o.s.security.web.FilterChainProxy - Securing POST /email/test?to=ak0ru@bk.ru
+2025-05-02 18:26:53 DEBUG o.s.security.web.FilterChainProxy - Secured POST /email/test?to=ak0ru@bk.ru
+2025-05-02 18:26:53 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 18:26:53 DEBUG o.s.security.web.FilterChainProxy - Securing POST /error?to=ak0ru@bk.ru
+2025-05-02 18:26:53 DEBUG o.s.security.web.FilterChainProxy - Secured POST /error?to=ak0ru@bk.ru
+2025-05-02 18:26:53 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 18:29:36 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/tasks/search?query=milk
+2025-05-02 18:29:36 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/tasks/search?query=milk
+2025-05-02 18:29:37 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 18:30:16 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/tasks/search?query=bread
+2025-05-02 18:30:16 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/tasks/search?query=bread
+2025-05-02 18:30:16 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 18:31:24 DEBUG o.s.security.web.FilterChainProxy - Securing GET /worldtime/Asia/Almaty
+2025-05-02 18:31:24 DEBUG o.s.security.web.FilterChainProxy - Secured GET /worldtime/Asia/Almaty
+2025-05-02 18:31:24 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 18:31:24 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-05-02 18:31:24 DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+2025-05-02 18:31:24 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
