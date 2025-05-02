@@ -2841,3 +2841,67 @@ Action:
 
 Consider defining a bean of type 'org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration' in your configuration.
 
+2025-05-02 16:32:26 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field passwordEncoder in com.example.demo.controller.AuthController required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2025-05-02 16:34:18 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field passwordEncoder in com.example.demo.controller.AuthController required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2025-05-02 16:34:58 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2d6e09f0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@257da215, org.springframework.security.web.context.SecurityContextHolderFilter@18356d9e, org.springframework.security.web.header.HeaderWriterFilter@823f978, org.springframework.security.web.authentication.logout.LogoutFilter@61c42e54, com.example.demo.security.JwtAuthenticationFilter@1892865f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6e8f3b76, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6cfe32cd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5aa461, org.springframework.security.web.session.SessionManagementFilter@6764201e, org.springframework.security.web.access.ExceptionTranslationFilter@c0a8787, org.springframework.security.web.access.intercept.AuthorizationFilter@af04d6d]
+2025-05-02 16:34:59 WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/worldtime/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-05-02 16:34:59 INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/worldtime/**']
+2025-05-02 16:35:06 DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/tasks
+2025-05-02 16:35:06 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 16:35:06 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-05-02 16:35:06 DEBUG o.s.security.web.FilterChainProxy - Securing POST /error
+2025-05-02 16:35:06 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 16:35:06 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-05-02 16:36:31 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field passwordEncoder in com.example.demo.controller.AuthController required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2025-05-02 17:01:03 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a641f6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@66487713, org.springframework.security.web.context.SecurityContextHolderFilter@4c90fc3b, org.springframework.security.web.header.HeaderWriterFilter@4fa3bebe, org.springframework.web.filter.CorsFilter@18ed8b75, org.springframework.security.web.csrf.CsrfFilter@2cc82c83, org.springframework.security.web.authentication.logout.LogoutFilter@34128fed, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@386d41cb, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7d5176d6, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@22ea09b7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@77e24d3c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5dfb078, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@27f8f1cc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@13f255ed, org.springframework.security.web.access.ExceptionTranslationFilter@4fe4b8b6, org.springframework.security.web.access.intercept.AuthorizationFilter@480f1311]

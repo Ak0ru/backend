@@ -1,3 +1,4 @@
+/*
 package com.example.demo.controller;
 
 import com.example.demo.model.AppUser;
@@ -78,3 +79,4 @@ public class AuthController {
         public void setToken(String token) { this.token = token; }
     }
 }
+*/

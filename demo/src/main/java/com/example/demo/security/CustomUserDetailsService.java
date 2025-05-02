@@ -1,3 +1,4 @@
+/*
 package com.example.demo.security;
 
 import com.example.demo.model.AppUser;
@@ -24,3 +25,4 @@ public class CustomUserDetailsService implements UserDetailsService {
                 Collections.singletonList(new SimpleGrantedAuthority(role)));
     }
 }
+*/

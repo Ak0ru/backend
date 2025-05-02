@@ -1,3 +1,4 @@
+/*
 package com.example.demo.security;
 
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -9,3 +10,4 @@ public class JwtAuthenticationToken extends UsernamePasswordAuthenticationToken 
         super(principal, credentials, authorities);
     }
 }
+*/
