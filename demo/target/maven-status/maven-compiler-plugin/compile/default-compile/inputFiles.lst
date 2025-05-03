@@ -1,9 +1,11 @@
-C:\Users\Ak0ru\Desktop\demo\src\main\java\com\example\demo\filter\RateLimitingFilter.java
 C:\Users\Ak0ru\Desktop\demo\src\main\java\com\example\demo\security\JwtAuthenticationFilter.java
 C:\Users\Ak0ru\Desktop\demo\src\main\java\com\example\demo\security\JwtUtil.java
-C:\Users\Ak0ru\Desktop\demo\src\main\java\com\example\demo\dto\WorldTimeResponse.java
+C:\Users\Ak0ru\Desktop\demo\src\main\java\com\example\demo\dto\EmailRequest.java
 C:\Users\Ak0ru\Desktop\demo\src\main\java\com\example\demo\spec\TaskSpecification.java
+C:\Users\Ak0ru\Desktop\demo\src\main\java\com\example\demo\controller\EmailController.java
+C:\Users\Ak0ru\Desktop\demo\src\main\java\com\example\demo\config\EmailConfig.java
 C:\Users\Ak0ru\Desktop\demo\src\main\java\com\example\demo\repository\TagRepository.java
+C:\Users\Ak0ru\Desktop\demo\src\main\java\com\example\demo\dto\WorldTimeResponseDto.java
 C:\Users\Ak0ru\Desktop\demo\src\main\java\com\example\demo\security\SecurityConfig.java
 C:\Users\Ak0ru\Desktop\demo\src\main\java\com\example\demo\controller\TaskController.java
 C:\Users\Ak0ru\Desktop\demo\src\main\java\com\example\demo\DemoApplication.java
@@ -16,6 +18,7 @@ C:\Users\Ak0ru\Desktop\demo\src\main\java\com\example\demo\repository\TaskReposi
 C:\Users\Ak0ru\Desktop\demo\src\main\java\com\example\demo\model\AppUser.java
 C:\Users\Ak0ru\Desktop\demo\src\main\java\com\example\demo\dto\PageResponse.java
 C:\Users\Ak0ru\Desktop\demo\src\main\java\com\example\demo\service\TaskService.java
+C:\Users\Ak0ru\Desktop\demo\src\main\java\com\example\demo\service\EmailService.java
 C:\Users\Ak0ru\Desktop\demo\src\main\java\com\example\demo\exception\ResourceNotFoundException.java
 C:\Users\Ak0ru\Desktop\demo\src\main\java\com\example\demo\model\Tag.java
 C:\Users\Ak0ru\Desktop\demo\src\main\java\com\example\demo\service\UserService.java

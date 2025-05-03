@@ -3099,3 +3099,85 @@ Consider defining a bean of type 'org.springframework.security.crypto.password.P
 2025-05-02 18:31:24 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
 2025-05-02 18:31:24 DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
 2025-05-02 18:31:24 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 18:44:39 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/tasks
+2025-05-02 18:44:39 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/tasks
+2025-05-02 18:44:40 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 18:44:44 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/tasks
+2025-05-02 18:44:44 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/tasks
+2025-05-02 18:44:44 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 18:44:45 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/tasks
+2025-05-02 18:44:45 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/tasks
+2025-05-02 18:44:45 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 18:44:47 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/tasks
+2025-05-02 18:44:47 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/tasks
+2025-05-02 18:44:47 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 18:44:48 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/tasks
+2025-05-02 18:44:48 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/tasks
+2025-05-02 18:44:48 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 18:44:49 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/tasks
+2025-05-02 18:44:49 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/tasks
+2025-05-02 18:44:49 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 18:44:51 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/tasks
+2025-05-02 18:44:51 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/tasks
+2025-05-02 18:44:51 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 19:02:27 DEBUG o.s.security.web.FilterChainProxy - Securing GET /worldtime/Asia_Almaty
+2025-05-02 19:02:27 DEBUG o.s.security.web.FilterChainProxy - Secured GET /worldtime/Asia_Almaty
+2025-05-02 19:02:29 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 19:08:01 DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/timezone/Asia/Almaty
+2025-05-02 19:08:01 DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/timezone/Asia/Almaty
+2025-05-02 19:08:01 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 19:08:01 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-05-02 19:08:01 DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+2025-05-02 19:08:01 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 19:08:14 DEBUG o.s.security.web.FilterChainProxy - Securing GET /timezone/Asia/Almaty
+2025-05-02 19:08:14 DEBUG o.s.security.web.FilterChainProxy - Secured GET /timezone/Asia/Almaty
+2025-05-02 19:08:14 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 19:08:14 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-05-02 19:08:14 DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+2025-05-02 19:08:14 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 19:08:43 DEBUG o.s.security.web.FilterChainProxy - Securing GET /worldtime/Asia_Almaty
+2025-05-02 19:08:43 DEBUG o.s.security.web.FilterChainProxy - Secured GET /worldtime/Asia_Almaty
+2025-05-02 19:08:43 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 19:23:57 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@267a8777, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@175c26ff, org.springframework.security.web.context.SecurityContextHolderFilter@487bc2fe, org.springframework.security.web.header.HeaderWriterFilter@40da1644, org.springframework.security.web.authentication.logout.LogoutFilter@1e9b0c92, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6491006, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5eed2edf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@623bdc46, org.springframework.security.web.access.ExceptionTranslationFilter@1a82453, org.springframework.security.web.access.intercept.AuthorizationFilter@11c40a65]
+2025-05-02 19:24:19 DEBUG o.s.security.web.FilterChainProxy - Securing GET /worldtime/Asia/Almaty
+2025-05-02 19:24:19 DEBUG o.s.security.web.FilterChainProxy - Secured GET /worldtime/Asia/Almaty
+2025-05-02 19:24:20 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 19:44:34 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1f207142, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65871cfd, org.springframework.security.web.context.SecurityContextHolderFilter@593e594f, org.springframework.security.web.header.HeaderWriterFilter@79735611, org.springframework.security.web.authentication.logout.LogoutFilter@a0e35c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7866fe3e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@65a3d7c9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@723f8990, org.springframework.security.web.access.ExceptionTranslationFilter@73072745, org.springframework.security.web.access.intercept.AuthorizationFilter@69c263f8]
+2025-05-02 19:44:39 DEBUG o.s.security.web.FilterChainProxy - Securing GET /worldtime/Asia/Almaty
+2025-05-02 19:44:39 DEBUG o.s.security.web.FilterChainProxy - Secured GET /worldtime/Asia/Almaty
+2025-05-02 19:44:40 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 19:44:58 DEBUG o.s.security.web.FilterChainProxy - Securing GET /timezone/Asia/Almaty
+2025-05-02 19:44:58 DEBUG o.s.security.web.FilterChainProxy - Secured GET /timezone/Asia/Almaty
+2025-05-02 19:44:58 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 19:44:58 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-05-02 19:44:58 DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+2025-05-02 19:44:58 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-02 19:45:10 DEBUG o.s.security.web.FilterChainProxy - Securing GET /worldtime/Asia/Almaty
+2025-05-02 19:45:10 DEBUG o.s.security.web.FilterChainProxy - Secured GET /worldtime/Asia/Almaty
+2025-05-02 19:45:10 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-03 07:26:31 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2d26c6a2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@362e6fe, org.springframework.security.web.context.SecurityContextHolderFilter@61e34bec, org.springframework.security.web.header.HeaderWriterFilter@40625ac6, org.springframework.security.web.authentication.logout.LogoutFilter@74159dc9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53945f9c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@463746eb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1259b2a5, org.springframework.security.web.access.ExceptionTranslationFilter@cf0bc92, org.springframework.security.web.access.intercept.AuthorizationFilter@155767a7]
+2025-05-03 07:26:43 DEBUG o.s.security.web.FilterChainProxy - Securing GET /worldtime/Asia/Almaty
+2025-05-03 07:26:43 DEBUG o.s.security.web.FilterChainProxy - Secured GET /worldtime/Asia/Almaty
+2025-05-03 07:26:55 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-03 07:27:23 DEBUG o.s.security.web.FilterChainProxy - Securing GET /worldtime/Asia/Almaty
+2025-05-03 07:27:23 DEBUG o.s.security.web.FilterChainProxy - Secured GET /worldtime/Asia/Almaty
+2025-05-03 07:27:23 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-03 07:37:11 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@e30a8ef, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ffaa711, org.springframework.security.web.context.SecurityContextHolderFilter@192b76a4, org.springframework.security.web.header.HeaderWriterFilter@18ed9480, org.springframework.security.web.authentication.logout.LogoutFilter@362e6fe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@309b8144, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@662b199, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3abb6aa, org.springframework.security.web.access.ExceptionTranslationFilter@6de2344a, org.springframework.security.web.access.intercept.AuthorizationFilter@29811d4d]
+2025-05-03 07:37:21 DEBUG o.s.security.web.FilterChainProxy - Securing GET /worldtime/Asia/Almaty
+2025-05-03 07:37:21 DEBUG o.s.security.web.FilterChainProxy - Secured GET /worldtime/Asia/Almaty
+2025-05-03 07:37:22 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-03 07:37:48 DEBUG o.s.security.web.FilterChainProxy - Securing GET /worldtime/Asia/Almaty
+2025-05-03 07:37:48 DEBUG o.s.security.web.FilterChainProxy - Secured GET /worldtime/Asia/Almaty
+2025-05-03 07:37:49 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-03 07:38:06 DEBUG o.s.security.web.FilterChainProxy - Securing GET /worldtime/Asia/Almaty
+2025-05-03 07:38:06 DEBUG o.s.security.web.FilterChainProxy - Secured GET /worldtime/Asia/Almaty
+2025-05-03 07:38:07 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-03 07:38:12 DEBUG o.s.security.web.FilterChainProxy - Securing GET /worldtime/Asia/Almaty
+2025-05-03 07:38:12 DEBUG o.s.security.web.FilterChainProxy - Secured GET /worldtime/Asia/Almaty
+2025-05-03 07:38:13 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-03 07:38:17 DEBUG o.s.security.web.FilterChainProxy - Securing GET /worldtime/Asia/Almaty
+2025-05-03 07:38:17 DEBUG o.s.security.web.FilterChainProxy - Secured GET /worldtime/Asia/Almaty
+2025-05-03 07:38:18 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-03 07:38:22 DEBUG o.s.security.web.FilterChainProxy - Securing GET /worldtime/Asia/Almaty
+2025-05-03 07:38:22 DEBUG o.s.security.web.FilterChainProxy - Secured GET /worldtime/Asia/Almaty
+2025-05-03 07:38:23 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
